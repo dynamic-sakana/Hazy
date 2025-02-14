@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "source/Hazy/include",
+                "D:/dev/vcpkg/installed/x64-mingw-static/include",
+                "source/tests"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "WINDOWS_PLATFORM"
+            ],
+            "intelliSenseMode": "windows-gcc-x64",
+            "cStandard": "c23",
+            "cppStandard": "c++20",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
