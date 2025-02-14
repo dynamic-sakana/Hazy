@@ -1,0 +1,116 @@
+{
+	// Place your C++easyx 工作区 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"include 预处理指令":{
+		"prefix": "#include",
+		"body": [
+			"#include <${1:头文件名}>",
+			"$0"
+		]
+	},
+	"define 宏定义":{
+		"prefix": "#define",
+		"body": [
+			"#define ${1:/* 宏名 */} ${2:/* 宏值 */}",
+			"$0"
+		]
+	},
+	"命名空间使用":{
+		"prefix": "using",
+		"body": [
+			"using namespace ${1:std};",
+			"$0"
+		]
+	},
+	"main 函数":{
+		"prefix": "main",
+		"body": [
+			"int main(int argc, char const *argv[]) {",
+			"\t${0:/* code */}",
+			"\treturn 0;",
+			"}"
+		]
+	},
+	"for 循环":{
+		"prefix": "for",
+		"body": [
+			"for (int ${1:index} = ${2:init}; ${1:index} < ${3:con}; ${4:ope}) {",
+			"\t${0:/*body*/}",
+			"}"
+		]
+	},
+	"while 循环":{
+		"prefix": "while",
+		"body": [
+			"while (${1:condition}) {",
+			"\t${0:/*body*/}",
+			"}"
+		]
+	},
+	"if 条件判断":{
+		"prefix": "if",
+		"body": [
+			"if (${1:condition}) {",
+			"\t${2:/*body*/}",
+			"}"
+		]
+	},
+	"else if 分支":{
+		"prefix": "else if",
+		"body": [
+			"else if (${1:condition}) {",
+			"\t${2:/*body*/}",
+			"}"
+		]
+	},
+	"else 分支":{
+		"prefix": "else",
+		"body": [
+			"else {",
+			"\t${1:/*body*/}",
+			"}"
+		]
+	},
+	"switch 条件判断":{
+		"prefix": "switch",
+		"body": [
+			"switch (${1:/* monitored */}) {",
+			"\t${3:/*possibility*/}",
+			"\tdefault:",
+			"\t\t${2:/*code*/}",
+			"\t\tbreak;",
+			"}"
+		]
+	},
+	"case 分支":{
+		"prefix": "case",
+		"body": [
+			"case ${1:/*value*/}:",
+			"\t${2:/*code*/}",
+			"\tbreak;"
+		]
+	},
+	"main 函数入口":{
+		"prefix": "int main(int argc, char* argv[])",
+		"body": [
+			"int main(int argc, char* argv[]) {",
+			"\t${1:/*code*/}",
+			"\treturn 0;",
+			"}"
+		]
+	}
+}
